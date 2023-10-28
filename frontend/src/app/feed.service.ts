@@ -9,6 +9,9 @@ export class FeedService {
   constructor() { }
 
   getNTweets(n: number): Tweet[] {
-    return [new Tweet("abcde", 1, "john")]
+    let a = new Tweet("abcde", 1, "john")
+    let b = new Tweet("abcde", 1, "john")
+    let z = [a, b]
+    return z 
   }
 }

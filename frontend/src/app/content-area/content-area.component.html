@@ -1,3 +1,13 @@
-<mat-card>
-    <mat-card-content>Simple card</mat-card-content>
+<mat-card class="cards" *ngFor="let tweet of tweets">
+    <mat-card-header>
+        <mat-card-subtitle>Author</mat-card-subtitle>
+        <mat-card-title>{{ tweet.user }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        {{ tweet.msg }}
+    </mat-card-content>
+    <mat-card-actions>
+        <img src="../../assets/heart.svg" width="30" height="30">
+        {{ tweet.likes }}
+    </mat-card-actions>
 </mat-card>
