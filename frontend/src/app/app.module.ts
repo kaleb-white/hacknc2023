@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -12,23 +11,26 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card'
 import { ContentAreaComponent } from './content-area/content-area.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     SideBarComponent,
-    ContentAreaComponent
+    ContentAreaComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    //Component,
     MatIconModule, 
     MatButtonModule, 
-    MatToolbarModule
+    MatToolbarModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

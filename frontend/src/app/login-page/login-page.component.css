@@ -1,0 +1,25 @@
+.login-page{
+    text-align: center;
+    color: white;
+    background: #1da1f2;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 10px;
+}
+
+.container{
+    text-align: center;
+}
+
+.returning-user{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight: bold;
+}
+
+.new-user{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight: bold;
+}
